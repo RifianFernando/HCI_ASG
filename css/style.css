@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 :root {
     --white: #f5f5f5;
     --grey: #a09b9b;
@@ -14,20 +16,8 @@
     position: fixed;
     width: 100%;
     display: flex;
-    padding: 30px 80px;
+    padding: 10px 80px;
     justify-content: space-between;
-    }
-.navbar-mid{
-    display: flex;
-    gap: 48px;
-    align-items: center;
-}
-.navbar-mid a{
-    font-family: "Poppins";
-    font-size: 20px;
-    font-weight: bold;
-    color: var(--white);
-    text-decoration: none;
 }
 
 .navbar-right {
@@ -37,9 +27,14 @@
 }
 .navbar-right a{
     font-size: 20px;
-    color: var(--dark-blue);
     text-decoration: none;
+    font-family: "Poppins";
+    font-size: 20px; 
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
 .navbar-login a{
     font-size: 20px;
     font-family: "Prompt";
