@@ -13,11 +13,12 @@
           <img src="./Assets/Logo.svg" alt="logo"/>
         </a>
         <div class="navbar-mid">
-            <a class="home-navbar" href="#Landing-page">Home</a>
-            <a class="home-navbar" href="#Landing-page">Recomendation</a>
-            <a class="about-navbar" href="#About-Us" id="nav-link">About Us</a>
-            <a class="prize-navbar" href="#prize">Prize</a>
-            <a class="contact-navbar" href="#footer">Information</a>
+            <form class="search-bar" id="search-line">
+                <input id="input" class="input-search" placeholder="Search here..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search here...'"  type="text">
+                <button class="btn-search" type="submit">
+                    <img src="./Assets/search-icon.svg" alt="search"/>
+                </button>
+            </form>
         </div>
         <div class="navbar-right">  
             <div class="navbar-login">
@@ -32,5 +33,6 @@
         </div>
     </section>
 
+    <script src="/js/script.js"></script>
 </body>
 </html>

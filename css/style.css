@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Linden+Hill&family=Poppins:wght@200;400&family=Prompt:wght@600;700&family=Ramaraja&family=Rochester&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Linden+Hill&family=Nunito&family=Poppins:wght@200;400&family=Prompt:wght@600;700&family=Ramaraja&family=Rochester&display=swap');
+
 :root {
     --white: #f5f5f5;
     --grey: #a09b9b;
@@ -16,18 +19,69 @@
     display: flex;
     padding: 30px 80px;
     justify-content: space-between;
-    }
+}
+
 .navbar-mid{
     display: flex;
-    gap: 48px;
-    align-items: center;
 }
-.navbar-mid a{
-    font-family: "Poppins";
+/* search-bar */
+.search-bar{
+    width: 360px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-self: flex-end;
+    border-width: 2px;
+    border-radius: 9999px;
+    padding-right: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.56);
+}
+
+.active-search{
+    width: 360px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-self: flex-end;
+    border-width: 2px;
+    border-radius: 9999px;
+    padding-right: 4px;
+    border: 1px solid rgba(111, 245, 1, 0.56);
+    transition: 0.8s;
+}
+
+.input-search:focus + .search-bar{
+    display: none;
+}
+
+.input-search{
+    border-width: 0px;
+    border-style: none;
+    box-sizing: border-box;
+    display: flex;
+    width: 304px;
+    height: 43px;
+    border: transparent;
+    border-radius: 30px;
     font-size: 20px;
-    font-weight: bold;
-    color: var(--white);
-    text-decoration: none;
+    font-family: "Nunito";
+}
+
+.input-search:focus + .search-bar{
+    border: 5px solid rgba(97, 241, 0, 1);
+}
+
+.input-search:focus{
+    outline: none;
+}
+
+.btn-search{
+    padding: 10px;
+    margin: 0;
+    border: 0;
+    border-style: none;
+    background-color: transparent;
+    cursor: pointer;
 }
 
 .navbar-right {
@@ -59,8 +113,8 @@
 
 /* Landing page */
 #Landing-page {
-    background-image: url('/assets/Landingpage.png');
-    height: 100vh;
+    background: linear-gradient(356.07deg, #C4C4C4 3.22%, rgba(196, 196, 196, 0) 70.5%);
+    height: 50vh;/* Rectangle 1 */
     background-size: cover;
     display: flex;
     flex-direction: column;
