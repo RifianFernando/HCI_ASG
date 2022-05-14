@@ -30,24 +30,25 @@
     </div>
     
     <section id="Landing-page">
-
+        <div class="title">
+            <h1>Grand City</h1>
+            <p>The Biggest Mall in the world</p>
+        </div>
         <div class="slideshow-container">
-            <div class="carousel-body">
-                <div class="slide">
-                    <img src="./Assets/mall1.jpg" alt="">
-                </div>
-                <div class="slide">
-                    <img src="./Assets/mall2.jpg" alt="">
-                </div>
-                <div class="slide">
-                    <img src="./Assets/mall3.jpg" alt="">
-                </div>
-                <div class="slide">
-                    <img src="./Assets/mall4.jpg" alt="">
-                </div>
-                <div class="slide">
-                    <img src="./Assets/mall5.jpg" alt="">
-                </div>
+            <div class="slide" id="img1">
+                <img src="./Assets/mall1.jpg" id="img1" alt="">
+            </div>
+            <div class="slide" id="img2">
+                <img src="./Assets/mall2.jpg" id="img2" alt="">
+            </div>
+            <div class="slide" id="img3">
+                <img src="./Assets/mall3.jpg" id="img3" alt="">
+            </div>
+            <div class="slide" id="img4">
+                <img src="./Assets/mall4.jpg" id="img4" alt="">
+            </div>
+            <div class="slide" id="img5">
+                <img src="./Assets/mall5.jpg" id="img5" alt="">
             </div>
         </div>
 
@@ -57,7 +58,18 @@
         <button id="next" class="next">
             <img src="./Assets/carousel-btn.svg" alt=""/>
         </button>
+        <div class="radio-input">
+            <button class="dots1" id="radio1" onclick="check()"></button>
+            <button class="dots2" id="radio2" onclick="check()"></button>
+            <button class="dots3" id="radio3" onclick="check()"></button>
+            <button class="dots4" id="radio4" onclick="check()"></button>
+            <button class="dots5" id="radio5" onclick="check()"></button>
+        </div>
     </section>
+
+    <div class="recomendation">
+        
+    </div>
 
     <script src="/js/script.js"></script>
 </body>

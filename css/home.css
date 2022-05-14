@@ -11,9 +11,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 .navbar {
-    position: fixed;
+    position: static;
     width: 100%;
     display: flex;
     padding: 10px 80px;
@@ -104,6 +105,9 @@
 .about-a{
     color: #31D8BA;
 }
+.about-a:hover{
+    color: #000000;
+}
 
 .contact-us{
     font-size: 20px;
@@ -113,6 +117,7 @@
 }
 
 .navbar-contact{
+    margin-right: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -123,65 +128,61 @@
     font-size: 20px;
     font-family: "Prompt";
 }
+.navbar-contact:hover{
+    box-shadow: 2px 2px 4px #000000;
+}
 
 /* Landing page */
 #Landing-page {
-    background: white;
     height: 100vh;/* Rectangle 1 */
     background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.landing-container {
-    display: flex;
-    background: linear-gradient(356.07deg, #C4C4C4 3.22%, rgba(196, 196, 196, 0) 70.5%);
-    height: 50vh;/* Rectangle 1 */
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+
+.title{
+    font-size: 32px;
+    font-family: "Poppins";
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    background: -webkit-linear-gradient(180deg, #12EEC6 22.92%, #0A0A0A 100%);;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .slideshow-container{
-    width: 490px;
-    height: 60%;
-    border-radius: 20px;
-    border: 2px solid var(--white);
-    overflow: hidden;
-}
-
-.carousel-body{
-    display: flex;
-    position: absolute;
-    bottom: 0;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    height: 60%;
-    width: 200%;
-    margin-left: -87%;
-    margin-bottom: 10%;
+    width: 704px;
+    height: 59%;
+    border-radius: 40px;
+    border: 2px solid var(--dark-blue);
 }
 
 .slide{
+    display: none;
     width: 100%;
     transition: 2s;
     height: 100%;
+    display: none;
+    transition: 1s;
     overflow: hidden;
 }
 
 .slide img{
     border-radius: 40px;
-    width: 100%;
+    width: 700px;
     height: 100%;
 }
 
 #prev{
     position: absolute;
-    top: 50%;
+    top: 65%;
     left: 10;
-    margin-right: 750px;
+    margin-right: 710px;
     border-style: none;
     transform: translateY(-50%);
     width: 50px;
@@ -192,12 +193,16 @@
     font-size: 30px;
     cursor: pointer;
 }
+#prev:active{
+    background: #0f0f0f;
+    color: white;
+}
 
 #next{
     position: absolute;
-    top: 50%;
+    top: 65%;
     right: 0;
-    margin-right: 540px;
+    margin-right: 580px;
     border-style: none;
     transform: rotate(180deg) translateY(50%);
     width: 50px;
@@ -207,4 +212,45 @@
     color: white;
     font-size: 30px;
     cursor: pointer;
+}
+#next:active{
+    background: #0f0f0f;
+    color: white;
+}
+/* radio button */
+.radio-input{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+}
+.radio-input button{
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 20px;
+    height: 20px;
+    left: 702px;
+    top: 713px;
+    border-radius: 50px;
+    border: 2px solid #31D8BA;
+}
+
+.enable{
+    background: #31D8BA;
+    animation-name: fade;
+    opacity: 4 ;
+    animation-duration: 1.5s;
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* recomendation */
+.recomendation{
+    display: flex;
+    height: 100vh;
+    
 }
