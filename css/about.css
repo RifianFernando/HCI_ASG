@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Linden+Hill&family=Poppins:wght@200;400&family=Prompt:wght@600;700&family=Ramaraja&family=Rochester&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Linden+Hill&family=Nunito&family=Poppins:wght@200;400&family=Prompt:wght@600;700&family=Ramaraja&family=Rochester&display=swap');
+
+:root {
+    --white: #f5f5f5;
+    --grey: #a09b9b;
+    --dark-blue: #09172d;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.navbar {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    padding: 10px 80px;
+    justify-content: space-between;
+}
+
+.navbar-mid{
+    display: flex;
+    margin-left: 140px;
+}
+/* search-bar */
+.search-bar{
+    width: 360px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-self: flex-end;
+    border-width: 2px;
+    border-radius: 9999px;
+    padding-right: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.56);
+}
+
+.active-search{
+    width: 360px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-self: flex-end;
+    border-width: 2px;
+    border-radius: 9999px;
+    padding-right: 4px;
+    border: 1px solid rgba(111, 245, 1, 0.56);
+    transition: 0.8s;
+}
+
+.input-search:focus + .search-bar{
+    display: none;
+}
+
+.input-search{
+    border-width: 0px;
+    border-style: none;
+    box-sizing: border-box;
+    display: flex;
+    width: 304px;
+    height: 43px;
+    border: transparent;
+    border-radius: 30px;
+    font-size: 20px;
+    font-family: "Nunito";
+}
+
+.input-search:focus + .search-bar{
+    border: 5px solid rgba(97, 241, 0, 1);
+}
+
+.input-search:focus{
+    outline: none;
+}
+
+.btn-search{
+    padding: 10px;
+    margin: 0;
+    border: 0;
+    border-style: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.navbar-right {
+    display: flex;
+    gap: 48px;
+    align-items: center;
+}
+.navbar-right a{
+    font-size: 20px;
+    text-decoration: none;
+    font-family: "Poppins";
+    font-weight: 600;
+    -webkit-background-clip: text;
+}
+
+.home-a{
+    color: #31D8BA;
+}
+
+.about-a{
+    color: #000000;
+}
+
+.contact-us{
+    font-size: 20px;
+    font-family: "Prompt";
+    text-decoration: none;
+    color: rgb(255, 255, 255)!important;
+}
+
+.navbar-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 30px;
+    border-radius: 25px;
+    background: #31D8BA;
+    font-size: 20px;
+    font-family: "Prompt";
+}
+
+/* Landing page */
+#Landing-page {
+    background: linear-gradient(356.07deg, #C4C4C4 3.22%, rgba(196, 196, 196, 0) 70.5%);
+    height: 50vh;/* Rectangle 1 */
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.landing-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
