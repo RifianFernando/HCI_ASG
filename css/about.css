@@ -102,6 +102,10 @@
     color: #31D8BA;
 }
 
+.home-a:hover{
+    color: #000000;
+}
+
 .about-a{
     color: #000000;
 }
