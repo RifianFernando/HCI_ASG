@@ -230,3 +230,19 @@ const hid = async (param) => {
         document.getElementById("show-4").classList.add("active-konten");
     }
 };
+
+var gototop = document.getElementById("goto-top");
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    gototop.style.display = "block";
+  } else {
+    gototop.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
