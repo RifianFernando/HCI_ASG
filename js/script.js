@@ -154,6 +154,7 @@ function check(){
         radio5.classList.remove("enable");
     }
 }
+
 const join = async () => {
 	const email = document.querySelector("#email").value;
     let valid = true;
@@ -175,5 +176,57 @@ const join = async () => {
     }
     if(valid == true){
         alert("We will send our latest news to your email");
+    }
+};
+
+const hid = async (param) => {
+    if(param == 'all'){
+        //top
+        document.getElementById("square-1").classList.add("active-info");
+        document.getElementById("square-2").classList.remove("active-info");
+        document.getElementById("square-3").classList.remove("active-info");
+        document.getElementById("square-4").classList.remove("active-info");
+        //konten
+        document.getElementById("show-1").classList.add("active-konten");
+        document.getElementById("show-2").classList.remove("active-konten");
+        document.getElementById("show-3").classList.remove("active-konten");
+        document.getElementById("show-4").classList.remove("active-konten");
+        console.log(document.getElementById("show-1"));
+    }
+    else if(param == 'other'){
+        //top
+        document.getElementById("square-1").classList.remove("active-info");
+        document.getElementById("square-2").classList.add("active-info");
+        document.getElementById("square-3").classList.remove("active-info");
+        document.getElementById("square-4").classList.remove("active-info");
+        //konten
+        document.getElementById("show-1").classList.remove("active-konten");
+        document.getElementById("show-2").classList.add("active-konten");
+        document.getElementById("show-3").classList.remove("active-konten");
+        document.getElementById("show-4").classList.remove("active-konten");
+    }
+    else if(param == 'tennant'){
+        //top
+        document.getElementById("square-1").classList.remove("active-info");
+        document.getElementById("square-2").classList.remove("active-info");
+        document.getElementById("square-3").classList.add("active-info");
+        document.getElementById("square-4").classList.remove("active-info");
+        //konten
+        document.getElementById("show-1").classList.remove("active-konten");
+        document.getElementById("show-2").classList.remove("active-konten");
+        document.getElementById("show-3").classList.add("active-konten");
+        document.getElementById("show-4").classList.remove("active-konten");
+    }
+    else if(param == 'events'){
+        //top
+        document.getElementById("square-1").classList.remove("active-info");
+        document.getElementById("square-2").classList.remove("active-info");
+        document.getElementById("square-3").classList.remove("active-info");
+        document.getElementById("square-4").classList.add("active-info");
+        //konten
+        document.getElementById("show-1").classList.remove("active-konten");
+        document.getElementById("show-2").classList.remove("active-konten");
+        document.getElementById("show-3").classList.remove("active-konten");
+        document.getElementById("show-4").classList.add("active-konten");
     }
 };
