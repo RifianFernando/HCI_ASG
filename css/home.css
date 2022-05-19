@@ -193,7 +193,7 @@
     position: absolute;
     top: 60%;
     left: 10;
-    margin-right: 1040px;
+    margin-right: 1140px;
     border-style: none;
     transform: translateY(-50%);
     width: 50px;
@@ -217,7 +217,7 @@
     position: absolute;
     top: 60%;
     right: 0;
-    margin-right: 318px;
+    margin-right: 350px;
     border-style: none;
     transform: rotate(180deg) translateY(50%);
     width: 50px;
