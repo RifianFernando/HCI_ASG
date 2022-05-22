@@ -185,6 +185,7 @@
 }
 
 .form-1{
+    height: auto;
     display: block;
 }
 
@@ -223,7 +224,7 @@
 
 .form input{
     font-family: "Poppins";
-    height: 50px;
+    height: 40px;
     border: inherit;
     border-radius: 10px;
     padding: 10px;
