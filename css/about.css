@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Linden+Hill&family=Poppins:wght@200;400&family=Prompt:wght@600;700&family=Ramaraja&family=Rochester&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Linden+Hill&family=Nunito&family=Poppins:wght@200;400&family=Prompt:wght@600;700&family=Ramaraja&family=Rochester&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Linden+Hill&family=Nunito&family=PT+Serif:wght@400;700&family=Poppins:wght@200;400&family=Prompt:wght@600;700&family=Ramaraja&family=Rochester&display=swap');
 
 :root {
     --white: #f5f5f5;
@@ -14,77 +15,14 @@
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
+
 .navbar {
-    position: static;
+    position: fixed;
+    background-color: white;
     width: 100%;
     display: flex;
     padding: 10px 80px;
     justify-content: space-between;
-}
-
-
-.navbar-mid{
-    display: flex;
-    margin-left: 140px;
-}
-/* search-bar */
-.search-bar{
-    width: 360px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-self: flex-end;
-    border-width: 2px;
-    border-radius: 9999px;
-    padding-right: 4px;
-    border: 1px solid rgba(0, 0, 0, 0.56);
-}
-
-.active-search{
-    width: 360px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-self: flex-end;
-    border-width: 2px;
-    border-radius: 9999px;
-    padding-right: 4px;
-    border: 1px solid rgba(111, 245, 1, 0.56);
-    transition: 0.8s;
-}
-
-.input-search:focus + .search-bar{
-    display: none;
-}
-
-.input-search{
-    border-width: 0px;
-    border-style: none;
-    box-sizing: border-box;
-    display: flex;
-    width: 304px;
-    height: 43px;
-    border: transparent;
-    border-radius: 30px;
-    font-size: 20px;
-    font-family: "Nunito";
-}
-
-.input-search:focus + .search-bar{
-    border: 5px solid rgba(97, 241, 0, 1);
-}
-
-.input-search:focus{
-    outline: none;
-}
-
-.btn-search{
-    padding: 10px;
-    margin: 0;
-    border: 0;
-    border-style: none;
-    background-color: transparent;
-    cursor: pointer;
 }
 
 .navbar-right {
@@ -144,10 +82,20 @@
     background: #7dbeb2;
 }
 
-/* Landing page */
+/* Landing page about us*/
 #Landing-page {
-    background: linear-gradient(356.07deg, #C4C4C4 3.22%, rgba(196, 196, 196, 0) 70.5%);
-    height: 50vh;/* Rectangle 1 */
+    background: rgb(150, 148, 148);
+    height: 70vh;/* Rectangle 1 */
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#Landing-page-2 {
+    background: rgb(29, 55, 70);
+    height: 70vh;/* Rectangle 1 */
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -157,8 +105,292 @@
 
 .landing-container {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    padding-left: 10em;
+    padding-right: 10em;
+}
+
+.about-us-body{
+    font-family: "Poppins"; 
+    width: 50%;
+    font-size: 20px;
+    display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+.about-us-body-2{
+    font-family: "Poppins"; 
+    color: white;
+    width: 50%;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+.about-us-body h1{
+    color: #31D8BA;
+    font-size: 38px;
+}
+
+.about-us-body-2 h1{
+    font-size: 40px;
+}
+
+.about-us-img{
+    display: flex;
+    width: 40%;
+    height: 90%;
+    transition: 0.8s;
+    border-radius: 20px;
+    box-shadow: 6px 6px 24px -2px rgb(20 33 61 / 15%);
+}
+
+.about-us-img-2{
+    display: flex;
+    width: 40%;
+    height: 90%;
+    transition: 0.8s;
+    border-radius: 20px;
+    box-shadow: 6px 6px 24px -2px rgb(20 33 61 / 15%);
+}
+
+.about-us-img:hover{
+    transition: 0.8s;
+    box-shadow: 6px 6px 24px -2px rgba(26, 137, 151, 0.5);
+}
+
+.about-us-img-2:hover{
+    transition: 0.8s;
+    box-shadow: 6px 6px 24px -2px rgba(255, 255, 255, 0.5);
+}
+
+.about-us-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.about-us-img-2 img{
+    width: 100%;
+    height: 100%;
+}
+
+.highlight-indonesia{
+    color: #31D8BA;
+}
+
+
+
+
+
+
+/* footer/ */
+#footer{
+    padding-top: 40px;
+    width: 100%;
+    height:400px;
+    background-color: #C4C4C4;
+    overflow: hidden;
+}
+.footer-top{
+    width: 100%;
+    height: 240px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.text{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start; 
+    height: 240px;
+    width: 400px;
+}
+
+.title{
+    font-size: 24px;
+    font-family: "Poppins";
+    font-weight: bold;
+    overflow: hidden;
+    height: 180px;
+    background: -webkit-linear-gradient(180deg, #31D8BA 22.92%, #0A0A0A 100%);;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.isi{
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #000000;
+    font-family: "Poppins";
+    height: 300px;
+}
+.follow-sosmed{
+    width: 100%;
+    height: 71px;
+    background-color: #969393;
+    display: flex;
     align-items: center;
     justify-content: center;
-    gap: 60px;
+}
+.sosmed-container{
+    display: flex;
+    
+    width:88%;  
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.text-follow{
+    font-family: "Poppins";
+    font-size: 14px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-follow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 130px;
+    padding-left: 20px;
+}
+.facebook{
+    background-color: #000000;
+    width: 33px;
+    height: 33px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.facebook a{
+    color:rgb(255, 255, 255);
+    text-decoration: none; 
+    background-color: none;
+    font-family: "Poppins";
+    font-size: 20px;
+}
+.facebook:hover{
+    background-color: #31D8BA;
+    width: 33px;
+    height: 33px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.instagram{
+    background-color: #000000;
+    width: 33px;
+    height: 33px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.instagram:hover{
+    background-color: #31D8BA;
+    width: 33px;
+    height: 33px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.twitter{
+    background-color: #000000;
+    width: 33px;
+    height: 33px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.twitter:hover{
+    background-color: #31D8BA;
+    width: 33px;
+    height: 33px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.copyright{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family: "Poppins";
+    font-size: 14px;
+    color: #ffffff;
+    width: 280px;
+}
+.keep-update{
+    display: flex;
+    width: 480px;
+    align-items: center;
+    justify-content: center;
+}
+.textupdate{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.textupdate p{
+    font-family: "Poppins";
+    padding-top: 10px;
+    font-size: 14px;
+    color: #ffffff;
+    height: 47px;
+    width: 230px;
+    padding-right: 25px;
+    overflow: hidden;
+}
+.input-update input{
+    height: 30px;
+    width: 214px;
+    background-color: none;
+}
+
+.btn-join{
+    height: 30px;
+    width: 30px;
+    background-color: #4b4a4a;
+    color: #ffffff;
+    font-family: "Poppins";
+    border-radius: 5px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+}
+.btn-join:hover{
+    background-color: #2dcea6;
+    box-shadow: #12EEC6;
+}
+.btn-join:active{
+    background-color: #828282;
+}
+.logo-bawah{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    height: 50px;
+    overflow: hidden;
+}
+.textupdate{
+    overflow: hidden;
 }

@@ -31,12 +31,14 @@
                 <div class="first-person">
                     <h6>Rifian Fernando</h6>
                     <div class="isi-contact">
-                        <img src="Assets/form-atribute/whatsapp.png" alt="y">
+                        <a href="https://wa.me/?text=https://technoscape.id/hackathon" target="_blank">
+                            <img src="Assets/form-atribute/whatsapp.png" alt="y">
+                        </a>
                         <p>+62-851-7237-2311</p>
                     </div>
                     <div class="isi-contact">
-                        <img src="Assets/form-atribute/line-white.png" alt="y">
-                        <p>We are here to help you</p>
+                        <a href="https://technoscape.id/" target="_blank"><img src="Assets/form-atribute/line-white.png" alt="y"></a>
+                        <p>rifianfernando</p>
                     </div>
                 </div>
             </div>
@@ -46,27 +48,109 @@
                     <p>Write your description and we will contact you soon!</p>
                 </div>
                 <form class="form" action="">
-                    <div class="form-group">
-                        <label for="name">Full Name</label>
-                        <input type="text" name="name" id="name" placeholder="Write your full name here...">
+                    <!-- form-1 -->
+                    <div class="form-1" id="form-1">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" name="name" id="name" placeholder="Write your full name here...">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Date of birth</label>
+                            <input type="date" name="date" id="date">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone number</label>
+                            <input type="number" name="phone" id="phone" placeholder="Enter your phone number">
+                        </div>
+                        <div class="btn-submit">
+                            <button type="button" onclick="next()" class="next-back" name="submit">Next</button>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" placeholder="Enter your email">
-                    </div>
-                    <div class="form-group-message">
-                        <label for="message">Message</label>
-                        <textarea name="message" class="message" cols="30" rows="10" placeholder="Enter your message"></textarea>
-                    </div>
-                    <div class="btn-submit">
-                        <button type="submit" class="submit" name="submit">Submit</button>
+                    <!-- form-2 -->
+                    <div class="form-2" id="form-2">
+                        <div class="form-group-message">
+                            <label for="message">Message</label>
+                            <textarea name="message" class="message" cols="30" rows="10" placeholder="Enter your message"></textarea>
+                        </div>
+                        <div class="btn-submit">
+                            <button type="button" onclick="back()" class="next-back">back</button>
+                            <button type="submit" class="submit" name="submit">Submit</button>
+                        </div>
                     </div>
                 </form>
             </div>
         </div>
     </div>
 
+    <!-- footer -->
+    <section id="footer">
+        <div class="footer-top">
+            <div class="text">
+                <div class="title">
+                    <p>Grand City, Tanggerang</p>
+                </div>
+                <div class="isi">
+                    <p>Address: Jl. BSD Raya Utama, Pagedangan, Kec. Pagedangan, Kabupaten Tangerang, Banten 15345</p>
+                </div>
+            </div>
+            
+            <div class="text">
+                <div class="title">
+                    <p>Grand City, Sentul</p>
+                </div>
+                <div class="isi">
+                    <p>Address: Jl. MH. Thamrin, Citaringgul, Kec. Babakan Madang, Kabupaten Bogor, Jawa Barat 16810</p>
+                </div>
+            </div>
 
+            <div class="text">
+                <div class="title">
+                    <p>Grand City, Jakarta</p>
+                </div>
+                <div class="isi">
+                    <p>Address: Jl. Jkt Garden City Boulevard No.1, RW.6, Cakung Tim., Kec. Cakung, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13910</p>
+                </div>
+            </div>
+        </div>
+        <div class="follow-sosmed">
+            <div class="sosmed-container">
+                <div class="text-follow">
+                    <p>Follow Us on social networks</p>
+                    <div class="icon-follow">
+                        <div class="facebook">
+                            <a href="https://www.facebook.com/" target="_blank">f</a>
+                        </div>
+                        <div class="instagram">
+                            <a href="https://www.instagram.com/" target="_blank"><img src="/assets/Instagram.svg" alt="instagram"></a>
+                        </div>
+                        <div class="twitter">
+                            <a href="https://www.twitter.com/" target="_blank"><img src="/assets/twitter.svg" alt="twitter"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>© 2022 GRAND CITY, All Right Reserved.
+                        Create  by Rifian Fernando</p>
+                </div>
+                <div class="keep-update">
+                    <div class="textupdate">
+                        <p>Keep update our latest news</p>
+                    </div>
+                    <form class="input-update" action="">
+                        <input id="email_join" type="text" placeholder="Email"required>
+                        <button class="btn-join" type="submit" onclick="join()">Join</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="logo-bawah">
+            <img src="/Assets/Logo.svg" alt="logo-bawah">
+        </div>
+    </section>
 
     <script src="/js/form.js"></script>
 </body>

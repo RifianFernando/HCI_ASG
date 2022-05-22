@@ -12,14 +12,6 @@
         <a class="navbar-left" href="./home.html">
           <img src="./Assets/Logo.svg" alt="logo"/>
         </a>
-        <div class="navbar-mid">
-            <form class="search-bar" id="search-line">
-                <input id="input" class="input-search" placeholder="Search here..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search here...'"  type="text" autocomplete="off">
-                <button class="btn-search" type="submit">
-                    <img src="./Assets/search-icon.svg" alt="search"/>
-                </button>
-            </form>
-        </div>
         <div class="navbar-right">  
             <a class ="home-a" href="./home.html">Home</a>
             <a class ="about-a" href="./aboutus.html">About Us</a>
@@ -31,10 +23,98 @@
     
     <section id="Landing-page">
         <div class="landing-container">
-
+            <div class="about-us-body">
+                <h1>About Us</h1>
+                <p>
+                    Grand City is a leading variety of retail store in <span class="highlight-indonesia">Indonesia</span>. We are a team of young and energetic people who are dedicated to providing you with the best shopping, eating, or other experience.
+                </p>
+            </div>
+            <div class="about-us-img">
+                <img src="Assets/grand-city.jpg" alt="">
+            </div>
         </div>
     </section>
 
-    <script src="/js/script.js"></script>
+    <section id="Landing-page-2">
+        <div class="landing-container">
+            <div class="about-us-img-2">
+                <img src="Assets/about-us-family.jpg" alt="">
+            </div>
+            <div class="about-us-body-2">
+                <h1>Our Mission</h1>
+                <p>
+                    Our mission is to provide you with the best mall experience in Indonesia. We are committed to providing you with the best experience in Indonesia. so that you can enjoy shopping, eating, or other experience.
+                </p>
+            </div>
+        </div>
+    </section>
+
+     <!-- footer -->
+     <section id="footer">
+        <div class="footer-top">
+            <div class="text">
+                <div class="title">
+                    <p>Grand City, Tanggerang</p>
+                </div>
+                <div class="isi">
+                    <p>Address: Jl. BSD Raya Utama, Pagedangan, Kec. Pagedangan, Kabupaten Tangerang, Banten 15345</p>
+                </div>
+            </div>
+            
+            <div class="text">
+                <div class="title">
+                    <p>Grand City, Sentul</p>
+                </div>
+                <div class="isi">
+                    <p>Address: Jl. MH. Thamrin, Citaringgul, Kec. Babakan Madang, Kabupaten Bogor, Jawa Barat 16810</p>
+                </div>
+            </div>
+
+            <div class="text">
+                <div class="title">
+                    <p>Grand City, Jakarta</p>
+                </div>
+                <div class="isi">
+                    <p>Address: Jl. Jkt Garden City Boulevard No.1, RW.6, Cakung Tim., Kec. Cakung, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13910</p>
+                </div>
+            </div>
+        </div>
+        <div class="follow-sosmed">
+            <div class="sosmed-container">
+                <div class="text-follow">
+                    <p>Follow Us on social networks</p>
+                    <div class="icon-follow">
+                        <div class="facebook">
+                            <a href="https://www.facebook.com/" target="_blank">f</a>
+                        </div>
+                        <div class="instagram">
+                            <a href="https://www.instagram.com/" target="_blank"><img src="/assets/Instagram.svg" alt="instagram"></a>
+                        </div>
+                        <div class="twitter">
+                            <a href="https://www.twitter.com/" target="_blank"><img src="/assets/twitter.svg" alt="twitter"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>© 2022 GRAND CITY, All Right Reserved.
+                        Create  by Rifian Fernando</p>
+                </div>
+                <div class="keep-update">
+                    <div class="textupdate">
+                        <p>Keep update our latest news</p>
+                    </div>
+                    <form class="input-update" action="">
+                        <input id="email_join" type="text" placeholder="Email"required>
+                        <button class="btn-join" type="submit" onclick="join()">Join</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="logo-bawah">
+            <img src="/Assets/Logo.svg" alt="logo-bawah">
+        </div>
+    </section>
+
+    <script src="/js/about.js"></script>
 </body>
 </html>
